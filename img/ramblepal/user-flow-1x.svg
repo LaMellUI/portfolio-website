@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="601px" height="666px" viewBox="0 0 601 666" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>User Flow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(0.000000, -72.000000)">
+            <g id="User-Flow" transform="translate(0.000000, 72.000000)">
+                <g id="Saved-Trails" transform="translate(184.750116, 580.570174)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.147154" height="49.2858133"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="18.3914142" y="30.6902605">Saved Trails</tspan>
+                    </text>
+                </g>
+                <g id="AR-View" transform="translate(369.359331, 498.585626)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="38.4401114" y="30.6843576">AR View</tspan>
+                    </text>
+                </g>
+                <g id="Waymarkers" transform="translate(184.679666, 498.585626)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="15.8774373" y="30.6843576">Waymarkers</tspan>
+                    </text>
+                </g>
+                <g id="Map-View" transform="translate(0.000000, 498.585626)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="30.0835655" y="30.6843576">Map View</tspan>
+                    </text>
+                </g>
+                <g id="Arrows" transform="translate(76.880223, 463.509250)" fill="#646363" fill-rule="nonzero">
+                    <g id="Line-Copy">
+                        <path d="M185.097493,-0.417827298 L185.097493,12.2181676 L0.437,12.218 L1.151,27.509 L4.81878771,27.3383932 L1.10707176,35.5203369 L-3.35059233,27.7196787 L0.316,27.548 L-0.417372959,11.8198201 L-0.43778318,11.382513 L184.261,11.382 L184.261838,-0.417827298 L185.097493,-0.417827298 Z"></path>
+                        <path d="M369.777159,-0.417827298 L369.777159,12.2181676 L185.117,12.218 L185.831,27.509 L189.498453,27.3383932 L185.786737,35.5203369 L181.329073,27.7196787 L184.996,27.548 L184.262293,11.8198201 L184.241883,11.382513 L368.941,11.382 L368.941504,-0.417827298 L369.777159,-0.417827298 Z"></path>
+                    </g>
+                    <path id="Line" d="M185.51532,0.856878085 L185.515,26.246 L189.18663,26.2461148 L185.097493,34.2461148 L181.008357,26.2461148 L184.679,26.246 L184.679666,0.856878085 L185.51532,0.856878085 Z"></path>
+                </g>
+                <g id="Route-Info" transform="translate(183.844011, 414.235294)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="27.5766017" y="30.6843576">Route Info</tspan>
+                    </text>
+                </g>
+                <path id="Line-2" d="M170.05571,387.927761 L170.055,438.872 L177.124,438.872 L177.12411,435.200712 L185.12411,439.289848 L177.12411,443.378985 L177.124,439.707 L169.220056,439.707676 L169.220056,387.927761 L170.05571,387.927761 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-2-Copy" d="M77.2980501,547.441755 L77.298,596.009 L177.962,596.666 L177.986612,592.995181 L185.959755,597.136439 L177.93324,601.17328 L177.957,597.501 L76.8774961,596.84238 L76.4623955,596.839671 L76.4623955,547.441755 L77.2980501,547.441755 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-2" d="M338.022284,387.927761 L338.022,438.872 L345.09,438.872 L345.090684,435.200712 L353.090684,439.289848 L345.090684,443.378985 L345.09,439.707 L337.18663,439.707676 L337.18663,387.927761 L338.022284,387.927761 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-2-Copy-2" d="M338.022284,547.441755 L338.022,596.715 L438.683,596.715 L438.683999,593.044402 L446.683999,597.133539 L438.683999,601.222675 L438.683,597.551 L337.18663,597.551366 L337.18663,547.441755 L338.022284,547.441755 Z" fill="#646363" fill-rule="nonzero"></path>
+                <g id="Map-View" transform="translate(276.601671, 337.401328)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="30.0835655" y="30.6843576">Map View</tspan>
+                    </text>
+                </g>
+                <g id="List-View" transform="translate(91.922006, 337.401328)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="35.097493" y="30.6843576">List View</tspan>
+                    </text>
+                </g>
+                <g id="Arrows" transform="translate(142.061281, 202.941888)" fill="#646363" fill-rule="nonzero">
+                    <path id="Line-Copy" d="M119.916435,100.635541 L119.916435,112.990575 L28.004,112.99 L28.355,127.731 L32.0255478,127.643892 L28.1278929,135.738911 L23.8495896,127.838458 L27.52,127.75 L27.1588926,112.582688 L27.1487129,112.154921 L119.08,112.154 L119.08078,100.635541 L119.916435,100.635541 Z"></path>
+                    <path id="Line-Copy" d="M211.002786,100.635541 L211.002786,112.990575 L119.09,112.99 L119.442,127.731 L123.111899,127.643892 L119.214244,135.738911 L114.935941,127.838458 L118.606,127.75 L118.245244,112.582688 L118.235064,112.154921 L210.167,112.154 L210.167131,100.635541 L211.002786,100.635541 Z"></path>
+                    <path id="Line-Copy" d="M238.579387,-0.417827298 L238.579387,0.417827298 L196.797,0.417 L197.028,127.738 L200.700015,127.73162 L196.625418,135.739036 L192.521755,127.746477 L196.192,127.739 L195.961003,0.000759038047 L195.960243,-0.417827298 L238.579387,-0.417827298 Z"></path>
+                    <path id="Line-Copy" d="M42.2005571,-0.417827298 L42.2005571,0.417827298 L0.418,0.417 L0.649,127.738 L4.32118485,127.73162 L0.246588155,135.739036 L-3.85707464,127.746477 L-0.186,127.739 L-0.417826609,0.000759038047 L-0.418587027,-0.417827298 L42.2005571,-0.417827298 Z"></path>
+                </g>
+                <text id="Download-or-saving-a" font-family="Poppins-Regular, Poppins" font-size="11.6991643" font-weight="normal" letter-spacing="0.292479113" fill="#646561">
+                    <tspan x="0" y="629.997202">Download or saving a route </tspan>
+                    <tspan x="0" y="645.997202">requires registration/login if </tspan>
+                    <tspan x="0" y="661.997202">skipped at start</tspan>
+                </text>
+                <g id="Search" transform="translate(183.844011, 253.050996)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text id="Filter" font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="52.6462396" y="30.6843576">Filter</tspan>
+                    </text>
+                </g>
+                <path id="Line" d="M261.559889,218.831499 L261.559,244.22 L265.231198,244.220735 L261.142061,252.220735 L257.052925,244.220735 L260.724,244.22 L260.724234,218.831499 L261.559889,218.831499 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-Copy-5" d="M260.724234,133.646015 L260.724,159.035 L264.395543,159.035251 L260.306407,167.035251 L256.21727,159.035251 L259.888,159.035 L259.888579,133.646015 L260.724234,133.646015 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-Copy-6" d="M260.724234,48.4605308 L260.724,73.849 L264.395543,73.8497675 L260.306407,81.8497675 L256.21727,73.8497675 L259.888,73.849 L259.888579,48.4605308 L260.724234,48.4605308 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-Copy-2" d="M260.724234,547.881309 L260.724,573.27 L264.395543,573.270546 L260.306407,581.270546 L256.21727,573.270546 L259.888,573.27 L259.888579,547.881309 L260.724234,547.881309 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-Copy-4" d="M600.417827,193.337391 L600.417827,617.595009 L344.324,617.595 L344.324358,621.266319 L336.324358,617.177182 L344.324358,613.088046 L344.324,616.759 L599.582,616.759 L599.582,194.173 L337.26181,194.173046 L337.26181,193.337391 L600.417827,193.337391 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-Copy-4" d="M380.640669,22.9664232 L380.640669,184.986376 L344.324,184.986 L344.324358,188.657685 L336.324358,184.568548 L344.324358,180.479412 L344.324,184.15 L379.805,184.15 L379.805,23.802 L336.501335,23.8020778 L336.501335,22.9664232 L380.640669,22.9664232 Z" fill="#646363" fill-rule="nonzero"></path>
+                <path id="Line-3" d="M345.975084,447.96457 L345.993,451.635 L559.886486,450.564151 L560.306407,450.562047 L560.306407,605.902884 L338.022284,605.902884 L338.022284,605.06723 L559.47,605.067 L559.47,451.401 L345.998,452.471 L346.01606,456.14274 L337.995673,452.093738 L345.975084,447.96457 Z" fill="#646363" fill-rule="nonzero"></path>
+                <g id="Home" transform="translate(183.844011, 168.700664)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="47.632312" y="30.6843576">Home</tspan>
+                    </text>
+                </g>
+                <g id="Home-Copy" transform="translate(183.844011, 0.000000)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text id="Welcome" font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="30.9192201" y="30.6843576">Welcome</tspan>
+                    </text>
+                </g>
+                <g id="Home-Copy-2" transform="translate(183.844011, 84.350332)">
+                    <rect id="Rectangle" fill="#015227" opacity="0.983035065" x="0" y="0" width="152.089136" height="49.2739564"></rect>
+                    <text id="Register" font-family="Poppins-Regular, Poppins" font-size="18.3844011" font-weight="normal" letter-spacing="0.459610026" fill="#FBFCFB">
+                        <tspan x="36.7688022" y="30.6843576">Register</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
