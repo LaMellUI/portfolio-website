@@ -80,6 +80,10 @@ a:focus {
   text-decoration: underline;
 }
 
+.button:visited {
+  text-decoration: none; color: rbg(255, 255, 255);
+}
+
 .button:active {
   opacity: 0.8;
   text-decoration: none; color: rbg(255, 255, 255);
