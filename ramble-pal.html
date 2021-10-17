@@ -20,11 +20,11 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
 </head>
@@ -32,8 +32,8 @@
 <body class="page" id="ramblepal">
   <!-- For the header -->
   <header>
-    <div>
-      <a href="index.html"><img src="img/logo.jpg" alt="Laura Mellor UI"></a>
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo2.jpg" alt="Laura Mellor UI"></a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -45,8 +45,8 @@
   </header>
 
   <main>
-    <div>
-      <div>
+    <div class="container">
+      <div class="row">
         <!-- open overview section -->
         <h1>Ramble Pal</h1>
         <div>
@@ -69,7 +69,7 @@
       <div>
         <!-- open process section -->
         <h2>My Process</h2>
-        <div>
+        <div class="row">
           <!-- open research section -->
           <h3>Research</h3>
           <div>
@@ -92,7 +92,7 @@
             <!-- close second column -->
           </div>
           <!-- close row that contains two columns -->
-          <div>
+          <div class="padtop">
             <h4>Competitor Analysis</h4>
             <div>
               <picture>
@@ -104,7 +104,7 @@
               <!-- open row that contains two columns -->
               <div>
                 <!-- open first column (Inspiration) -->
-                <h5>Inspiration</h5>
+                <h4>Inspiration</h4>
                 <ul>
                   <li>Displaying the number of trails available in the user's country or defined area, lets users know if filtering is necessary</li>
                   <li>A simple navigation bar with few top-level page destinations is very user friendly</li>
@@ -116,7 +116,7 @@
               <!-- close first column -->
               <div>
                 <!-- open second column (problem 2) -->
-                <h5>Improvement</h5>
+                <h4>Improvement</h4>
                 <ul>
                   <li>An excessive number of stats is difficult to take in. Show only the most necessary; users may adjust what they see in their settings</li>
                   <li>Long descriptive passages make it difficult to find the most useful information</li>
@@ -127,33 +127,35 @@
               <!-- close second column -->
             </div>
           </div>
-          <!-- close research section -->
+        </div>
+        <!-- close research section -->
+        <div class="row">
+          <!-- open ideation section -->
+          <h3>Ideation</h3>
           <div>
-            <!-- open ideation section -->
-            <h3>Ideation</h3>
-            <div>
-              <!-- open user flow section -->
-              <h4>User Flow</h4>
-              <p>The secondary goal requires the user to register and set up a profile to comment and review, so this is the entry point of the app. However, as some users may not wish to register or comment there is the option to skip this step. I
-                then prioritised the primary goal of viewing waymarker, map, and AR info via searching trails and filtering results.</p>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/user-flow-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/user-flow-2x.png" alt="User Flow Chart">
-                </picture>
-              </div>
+            <!-- open user flow section -->
+            <h4>User Flow</h4>
+            <p>The secondary goal requires the user to register and set up a profile to comment and review, so this is the entry point of the app. However, as some users may not wish to register or comment there is the option to skip this step. I
+              then prioritised the primary goal of viewing waymarker, map, and AR info via searching trails and filtering results.</p>
+            <div class="padtop">
+              <picture>
+                <source srcset="img/ramblepal/user-flow-1x.png" media="(max-width:767px)">
+                <img src="img/ramblepal/user-flow-2x.png" alt="User Flow Chart">
+              </picture>
             </div>
-            <!-- close user flow section -->
-            <div>
-              <!-- open gestures and haptics section -->
-              <h4>Gestures</h4>
-              <p>All gestures are as defined by the Human Interface and Material Design guidelines. All maps are fully interactive with double tap or pinch and spread for zoom as well as drag and rotate.</p>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/gestures-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/gestures-2x.png" alt="Gestures Used">
-                </picture>
-              </div>
+          </div>
+          <!-- close user flow section -->
+          <div class="padtop" id="gestures">
+            <!-- open gestures and haptics section -->
+            <h4>Gestures</h4>
+            <p>All gestures are as defined by the Human Interface and Material Design guidelines. All maps are fully interactive with double tap or pinch and spread for zoom as well as drag and rotate.</p>
+            <div class="padtop">
+              <picture>
+                <source srcset="img/ramblepal/gestures-1x.png" media="(max-width:767px)">
+                <img src="img/ramblepal/gestures-2x.png" alt="Gestures Used">
+              </picture>
+            </div>
+            <div class="padtop">
               <h4>Sounds and Haptics</h4>
               <p>Conventional notification and error sounds as per the Human Interface and Material Design Guidelines.</p>
 
@@ -162,95 +164,99 @@
 
               <p>Users may turn one or both of these off in the settings, and also request that they only be notified of messages from within a recent timeframe.</p>
             </div>
-            <!-- close gestures and haptics section -->
-            <div>
+          </div>
+          <!-- close gestures and haptics section -->
+          <div class="padtop">
+            <picture>
+              <source srcset="img/ramblepal/mockup1-1x.png" media="(max-width:767px)">
+              <img src="img/ramblepal/mockup1-2x.png" alt="Mockups">
+            </picture>
+          </div>
+        </div>
+        <!-- close ideation section -->
+        <div class="row">
+          <!-- open Wireframes section -->
+          <div>
+            <h3>Wireframes</h3>
+            <p>Using the current human interface and material design guidelines I designed an iOS and Android version of the app. Elements like the buttons, navigation bar, and tab navigation will be familar to users of the applicable native
+              design. Colour palette’s and typography were established based on the guidelines. Iconography unique to the app was designed to be cohesive with existing iconography.</p>
+            <div class="padtop">
               <picture>
-                <source srcset="img/ramblepal/mockup1-1x.png" media="(max-width:767px)">
-                <img src="img/ramblepal/mockup1-2x.png" alt="Mockups">
+                <source srcset="img/ramblepal/wireframes-1x.png" media="(max-width:767px)">
+                <img src="img/ramblepal/wireframes-2x.png" alt="Stages of Wireframes">
               </picture>
             </div>
           </div>
-          <!-- close ideation section -->
+          <div class="padtop">
+            <h4>User Testing</h4>
+          </div>
           <div>
-            <!-- open Wireframes section -->
+            <!-- open row that contains three columns -->
             <div>
-              <h3>Wireframes</h3>
-              <p>Using the current human interface and material design guidelines I designed an iOS and Android version of the app. Elements like the buttons, navigation bar, and tab navigation will be familar to users of the applicable native
-                design. Colour palette’s and typography were established based on the guidelines. Iconography unique to the app was designed to be cohesive with existing iconography.</p>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/wireframes-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/wireframes-2x.png" alt="Stages of Wireframes">
-                </picture>
-              </div>
+              <!-- open first column (Positive) -->
+              <h5>Positive</h5>
+              <ul>
+                <li>Eye catching logo, use of colour and details</li>
+                <li>Clean and inviting design</li>
+                <li>Info is easy to see at a glance</li>
+                <li>Good layout and logical hierarchy</li>
+                <li>Easy to navigate</li>
+              </ul>
             </div>
+            <!-- close first column -->
             <div>
-              <h4>User Testing</h4>
-              <div>
-                <!-- open row that contains three columns -->
-                <div>
-                  <!-- open first column (Positive) -->
-                  <h5>Positive</h5>
-                  <ul>
-                    <li>Eye catching logo, use of colour and details</li>
-                    <li>Clean and inviting design</li>
-                    <li>Info is easy to see at a glance</li>
-                    <li>Good layout and logical hierarchy</li>
-                    <li>Easy to navigate</li>
-                  </ul>
-                </div>
-                <!-- close first column -->
-                <div>
-                  <!-- open second column (Critique) -->
-                  <h5>Critique</h5>
-                  <ul>
-                    <li>iOS nav bar icons are larger than other app icons</li>
-                    <li>Live Waymarker page looks a little unfinished, inconsistent with the rest of the app</li>
-                    <li>Clarity as to which pin pop-up is attached to on map view</li>
-                    <li>Info of time and distance on live mode would be useful</li>
-                    <li>Easy accessible start button but perhaps it being larger or a different colour would make it easier to spot</li>
-                  </ul>
-                </div>
-                <!-- close second column -->
-                <div>
-                  <!-- open third column (Solution) -->
-                  <h5>Solution</h5>
-                  <ul>
-                    <li>Adjust nav bar icons to the same size as the other icons</li>
-                    <li>Create a collapsable list instead of info cards</li>
-                    <li>Mute map with overlay and ensure the pop-up lies just beneath the relevant pin</li>
-                    <li>Use gradient overlay theme to add this info to live screens</li>
-                    <li>Use an extended floating action button (as per Material Design guidelines) and centre</li>
-                  </ul>
-                </div>
-                <!-- close third column -->
-              </div>
-              <!-- close row that contains three columns -->
+              <!-- open second column (Critique) -->
+              <h5>Critique</h5>
+              <ul>
+                <li>iOS nav bar icons are larger than other app icons</li>
+                <li>Live Waymarker page looks a little unfinished, inconsistent with the rest of the app</li>
+                <li>Clarity as to which pin pop-up is attached to on map view</li>
+                <li>Info of time and distance on live mode would be useful</li>
+                <li>Easy accessible start button but perhaps it being larger or a different colour would make it easier to spot</li>
+              </ul>
             </div>
-            <!-- close Wireframes section -->
+            <!-- close second column -->
             <div>
-              <!-- open design section -->
-              <h3> Design</h3>
-              <h4>Style Guide</h4>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/style-guide-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/style-guide-2x.png" alt="Style Guide">
-                </picture>
-              </div>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/final-ui-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/final-ui-2x.png" alt="Mockups">
-                </picture>
-              </div>
-              <h4>iOS Screens</h4>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/final-ui-ios-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/final-ui-ios-2x.png" alt="UI iOS">
-                </picture>
-              </div>
+              <!-- open third column (Solution) -->
+              <h5>Solution</h5>
+              <ul>
+                <li>Adjust nav bar icons to the same size as the other icons</li>
+                <li>Create a collapsable list instead of info cards</li>
+                <li>Mute map with overlay and ensure the pop-up lies just beneath the relevant pin</li>
+                <li>Use gradient overlay theme to add this info to live screens</li>
+                <li>Use an extended floating action button (as per Material Design guidelines) and centre</li>
+              </ul>
+            </div>
+            <!-- close third column -->
+          </div>
+          <!-- close row that contains three columns -->
+        </div>
+        <!-- close Wireframes section -->
+        <div class="row">
+          <!-- open design section -->
+          <h3> Design</h3>
+          <h4>Style Guide</h4>
+          <div>
+            <picture>
+              <source srcset="img/ramblepal/style-guide-1x.png" media="(max-width:767px)">
+              <img src="img/ramblepal/style-guide-2x.png" alt="Style Guide">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source srcset="img/ramblepal/final-ui-1x.png" media="(max-width:767px)">
+              <img src="img/ramblepal/final-ui-2x.png" alt="Mockups">
+            </picture>
+          </div>
+          <div class="padtop">
+            <h4>iOS Screens</h4>
+            <div>
+              <picture>
+                <source srcset="img/ramblepal/final-ui-ios-1x.png" media="(max-width:767px)">
+                <img src="img/ramblepal/final-ui-ios-2x.png" alt="UI iOS">
+              </picture>
+            </div>
+            <div class="padtop">
               <h4>Android Screens</h4>
               <div>
                 <picture>
@@ -259,37 +265,39 @@
                 </picture>
               </div>
             </div>
-            <!-- close design section -->
           </div>
-          <!-- close process section -->
-          <div>
-            <!-- open conclusion -->
-            <h2>Conclusion</h2>
-            <div>
-              <h3>What Went Well</h3>
-              <p>Protyping and user testing. I find the process of protyping is a great way to discover where elements have been viewed from a different persepctive and may need some tweaking.</p>
-              <p>Research into existing apps was a fantastic springboard for applying key design elements and highlighting problem areas for which I might want to find a solution.</p>
-            </div>
-            <div>
-              <h3>Challenges</h3>
-              <p>Navigating the iOS and Material Design guidelines. I wanted to utilise the guidelines as much as possible but keep the app's design cohesive across the two platforms. I'll look into incorporating the guidelines into my regular skills
-                progression.</p>
-              <p>I wanted to use a largely monochrome colour scheme and it took me a few iterations before I found something I was happy with but I think the speed at which I came to a decision and applied it to my wireframes has improved.</p>
-            </div>
-            <div>
-              <h3>Improvement</h3>
-              <p>I would like to introduce a Country Code design element for those people less used using countryside trails; I'd like to integrate it into the trail info and live trail pages e.g. at a gate, a tappable icon would remind people to
-                leave the gate how they found it.</p>
-              <p>In terms of my own skills; I would love to improve my ability to create illustration as I think this will be an asset moving forwards, particularly with onboarding features.</p>
-            </div>
-          </div>
-          <!-- close conclusion -->
         </div>
+        <!-- close design section -->
+      </div>
+      <!-- close process section -->
+      <div>
+        <!-- open conclusion -->
+        <h2>Conclusion</h2>
+        <div>
+          <h3>What Went Well</h3>
+          <p>Protyping and user testing. I find the process of protyping is a great way to discover where elements have been viewed from a different persepctive and may need some tweaking.</p>
+          <p>Research into existing apps was a fantastic springboard for applying key design elements and highlighting problem areas for which I might want to find a solution.</p>
+        </div>
+        <div>
+          <h3>Challenges</h3>
+          <p>Navigating the iOS and Material Design guidelines. I wanted to utilise the guidelines as much as possible but keep the app's design cohesive across the two platforms. I'll look into incorporating the guidelines into my regular skills
+            progression.</p>
+          <p>I wanted to use a largely monochrome colour scheme and it took me a few iterations before I found something I was happy with but I think the speed at which I came to a decision and applied it to my wireframes has improved.</p>
+        </div>
+        <div>
+          <h3>Improvement</h3>
+          <p>I would like to introduce a Country Code design element for those people less used using countryside trails; I'd like to integrate it into the trail info and live trail pages e.g. at a gate, a tappable icon would remind people to
+            leave the gate how they found it.</p>
+          <p>In terms of my own skills; I would love to improve my ability to create illustration as I think this will be an asset moving forwards, particularly with onboarding features.</p>
+        </div>
+      </div>
+      <!-- close conclusion -->
+    </div>
   </main>
 
   <!-- For the Footer -->
   <footer id="contact">
-    <div>
+    <div class="footer">
       <h2>Get in Touch</h2>
       <p>
         If you're interested in collaborating on a project or have any questions please send me an email via the link below
@@ -302,10 +310,10 @@
       </p>
       <div>
         <!--Social Media Layout and placeholders -->
-        <ul>
+        <ul class="social">
           <!-- LinkedIn Icon -->
-          <li><a href="https://www.linkedin.com/in/laura-mellor-69940a1b6/" target="_blank">
-              <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+          <li><a href="https://www.linkedin.com/in/laura-mellor-69940a1b6/" target="_blank" class="icons">
+              <svg height="16%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="16%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                 xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="g5891">
                   <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
@@ -321,9 +329,9 @@
               </svg>
             </a></li>
           <!-- Behance Icon -->
-          <li><a href="https://www.behance.net/lauramellorui" target="_blank">
-              <svg height="6.82666in" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in"
-                xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <li><a href="https://www.behance.net/lauramellorui" target="_blank" class="icons">
+              <svg height="16%" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="16%" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <style type="text/css">
                     <![CDATA[
