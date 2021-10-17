@@ -4,7 +4,7 @@ Primary (White): rgb(255, 255, 255);
 Secondary (Planet): rgb(35,76,12);
 Supporting (Light Sage): rgb(187, 199, 179);
 Supporting (Grey): rgb(110, 110, 110);
-Supporting (Lavender): rgb(170,163, 195);
+Supporting (Lavender): rgb(170, 163, 195);
 Text (Shadow): rgb(6, 14, 2);
 Hyperlink (Grass Green): rgb(55, 149, 1);
 
@@ -12,6 +12,10 @@ Ramble Pal Secondary: rgb(3, 87, 42);
 
 GloBowl Text: (Dark Sage): rgb(113, 125, 107);
 */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: rgb(255, 255, 255);
@@ -21,9 +25,17 @@ body {
   line-height: 1.6;
   color: rgb(6,14,2);
 }
+
+#intro {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-family: 'Merriweather', serif;
   font-size: 2.15em;
@@ -56,10 +68,16 @@ h5 {
 
 img {
   width: 100%;
+  align: center;
+}
+
+.floatleft {
+  float: left;
+  padding-right: 25px;
 }
 
 a:visited {
-  color: rgb(170,163, 195);
+  color: rgb(187, 199, 179);
 }
 a:active { /* selected link */
   color: rgb(55, 149, 1);
@@ -78,6 +96,23 @@ a:hover,
 a:focus {
   color: rgb(55, 149, 1);
   text-decoration: underline;
+}
+
+header {
+  background-color: rgb(35,76,12);
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.59);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 162px;
+}
+
+.padtop {
+  padding-top: 25px;
 }
 
 .button:visited {
@@ -119,7 +154,102 @@ a:focus {
 
 .button.contact:hover {
   background-color: rgb(35,76,12);
-  text-transform: uppercase; color: rgb(255, 255, 255);
+  text-transform: uppercase; color: rgb(255, 255, 255, 0.6);
   border: 2px solid rgb(35,76,12);
   cursor: pointer;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+#work .row {
+  margin: 25px 0;
+  border-bottom: 1.5px solid; padding-bottom: 25px; border-color: rgb(110, 110, 110);
+}
+
+.row {
+  margin: 25px 0;
+  border-bottom: 1.5px solid; padding-bottom: 25px; border-color: rgb(110, 110, 110);
+}
+
+.footer {
+  margin: 25px 0;
+  border-top: 1.5px solid; padding-top: 25px; border-color: rgb(110, 110, 110);
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a:visited {
+  color: rgb(187, 199, 179);
+}
+
+nav > ul > li > a:active { /* selected link */
+  color: rgb(255, 255, 255, 0.7);
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+nav > ul > li > a:hover {
+  color: rgb(255, 255, 255, 0.7);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.social svg {
+  padding: 5px;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+}
+
+ul.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
