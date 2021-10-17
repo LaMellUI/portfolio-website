@@ -20,20 +20,20 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
 </head>
 
-<body class="page" id="ramblepal">
+<body class="page" id="globowl">
   <!-- For the header -->
   <header>
-    <div>
-      <a href="index.html"><img src="img/logo.jpg" alt="Laura Mellor UI"></a>
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo2.jpg" alt="Laura Mellor UI"></a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -45,8 +45,8 @@
   </header>
 
   <main>
-    <div>
-      <div>
+    <div class="container">
+      <div class="row">
         <!-- open overview section -->
         <h1>GloBowl</h1>
         <div>
@@ -66,7 +66,7 @@
       <div>
         <!-- open process section -->
         <h2>My Process</h2>
-        <div>
+        <div class="row">
           <!-- open research section -->
           <h3>Research</h3>
           <div>
@@ -76,223 +76,232 @@
               <h5>Challenge</h5>
               <p>What do users want?</p>
               <h5>Goal</h5>
-              <p>I conducted interviews in order to find what users are looking for in a recipe web app, their frustrations, and what motivates interaction with one app over another. I wanted to find out whether they would use an app that gives guidance on ethical eating. Interviews were conducted via zoom for around 45 minutes.</p>
-              <div>
+              <p>I conducted interviews in order to find what users are looking for in a recipe web app, their frustrations, and what motivates interaction with one app over another. I wanted to find out whether they would use an app that gives
+                guidance on ethical eating. Interviews were conducted via zoom for around 45 minutes.</p>
+              <div class="padtop">
                 <picture>
                   <source srcset="img/globowl/user-quotes-1x.png" media="(max-width:767px)">
                   <img src="img/globowl/user-quotes-2x.png" alt="User Interview Quotes">
                 </picture>
               </div>
+              <div>
+                <h5>Patterns</h5>
+                <ul>
+                  <li>Using image quality & ratings to choose recipes</li>
+                  <li>Frustrated by US measurements & long blogs</li>
+                  <li>Desire to choose environmentally better foods</li>
+                  <li>Desire to see the global impact of a recipe</li>
+                  <li>Desire to have options when catering for people less inclined to choose alternatives</li>
+                </ul>
+              </div>
             </div>
             <!-- close first column -->
-            <div>
+            <div class="padtop">
               <!-- open second column (problem 2) -->
-              <h5>Problem 2</h5>
-              <p>The world is constantly changing and crucial trail information may be out of date, or season dependent. Users want to enjoy their time outdoors rather than spend that time solving unexpected problems.</p>
-              <h5>Goal</h5>
-              <p>Allow users to share trail updates specific to applicable points of the trail.</p>
+              <h4>User Personas</h4>
+              <h5>Challenge</h5>
+              <p>How to stay on track?</p>
+              <p>By highlighting patterns discovered during the user interviews, I built user personas, providing a focus for the design process.</p>
+              <div>
+                <picture>
+                  <source srcset="img/globowl/user-personas-1x.png" media="(max-width:767px)">
+                  <img src="img/globowl/user-personas-2x.png" alt="User Personas">
+                </picture>
+              </div>
             </div>
             <!-- close second column -->
           </div>
           <!-- close row that contains two columns -->
+        </div>
+        <!-- close research section -->
+        <div class="row">
+          <!-- open ideation section -->
+          <h3>Ideation</h3>
           <div>
-            <h4>Competitor Analysis</h4>
-            <div>
+            <picture>
+              <source srcset="img/globowl/mockup1-1x.png" media="(max-width:767px)">
+              <img src="img/globowl/mockup1-2x.png" alt="Mockup of Recipe Page">
+            </picture>
+          </div>
+          <div class="topright">
+            <!-- open problem section -->
+            <h5>Problem</h5>
+            <p>How to get users to engage with a new feature like a global footprint indicator, and the unfamiliar process of amending recipes to see the indicator change?.</p>
+          </div>
+          <div class="bottomright">
+            <h5>Solution</h5>
+            <p>The design of the indicator must be simple enough to be understood at a glance; mirroring a familiar feature, like a circular loading icon, and elements like dropdown menus for amending options, will aid usability.</p>
+          </div>
+          <!-- close problem section -->
+          <div class="padtop">
+            <!-- open user flow section -->
+            <h4>User Flow</h4>
+            <h5>Challenge</h5>
+            <p>What is the user's journey?</p>
+            <p>Following an MVP analysis where I established the primary user goals, I mapped out the user’s journey from entry point to goal achievement and began planning where design features would be required to get the user from A to B in the
+              most efficient way.</p>
+            <div class="padtop">
               <picture>
-                <source srcset="img/ramblepal/competitor-analysis-1x.png" media="(max-width:767px)">
-                <img src="img/ramblepal/competitor-analysis-2x.png" alt="Competitor Screenshots">
+                <source srcset="img/globowl/user-flow-1x.svg" media="(max-width:767px)">
+                <img src="img/globowl/user-flow-2x.svg" alt="User Journey Flow diagram">
               </picture>
             </div>
+          </div>
+          <!-- close user flow section -->
+          <div class="padtop">
+            <!-- open prototyping section -->
+            <h4>Testing Early Prototyping</h4>
             <div>
               <!-- open row that contains two columns -->
               <div>
-                <!-- open first column (Inspiration) -->
-                <h5>Inspiration</h5>
-                <ul>
-                  <li>Displaying the number of trails available in the user's country or defined area, lets users know if filtering is necessary</li>
-                  <li>A simple navigation bar with few top-level page destinations is very user friendly</li>
-                  <li>Attaching the live navigation button to the top/bottom of the screen as a FAB allows immediate access from anywhere within the app</li>
-                  <li>Vibrant greens are fun and evoke images of nature and the environment</li>
-                  <li>An animated location pin allows users to differentiate it from other map info and quickly see their location</li>
-                </ul>
+                <!-- open first column -->
+                <h5>Challenge</h5>
+                <p>Why are users struggling to navigate to the search bar?</p>
+                <h5>Solution</h5>
+                <p>When testing the basic wireframes I found that many users struggled to locate the search bar when included in the menu. I amended the design, ensuring that the search bar was immediately visible upon entry.</p>
               </div>
               <!-- close first column -->
               <div>
-                <!-- open second column (problem 2) -->
-                <h5>Improvement</h5>
-                <ul>
-                  <li>An excessive number of stats is difficult to take in. Show only the most necessary; users may adjust what they see in their settings</li>
-                  <li>Long descriptive passages make it difficult to find the most useful information</li>
-                  <li>Images are engaging but appropriate valuable space on a small device</li>
-                  <li>Icons must be easy to tell apart and clearly signify their meaning</li>
-                </ul>
+                <!-- open second column -->
+                <h5>Challenge</h5>
+                <p>How to interpret and apply feedback?</p>
+                <h5>Solution</h5>
+                <p>I received a compliment on the “feminine” aesthetic of the design, but I wanted the app to be more inclusive. I removed the illustrated borders and replaced them with thin, clean lines; I shifted any of the blush toned backgrounds
+                  (minimal as they were) to the grey tone in my palette. I definitely think this makes for a more inclusive and less fussy aesthetic.
+                  It was a real lesson in how sticking to the brief, user goal, and user personas can ensure that even feedback that is intended to be positive, when interpreted within context can ensure future iterations move in the right direction.
+                </p>
               </div>
               <!-- close second column -->
             </div>
+            <!-- close row that contains two columns -->
           </div>
-          <!-- close research section -->
-          <div>
-            <!-- open ideation section -->
-            <h3>Ideation</h3>
-            <div>
-              <!-- open user flow section -->
-              <h4>User Flow</h4>
-              <p>The secondary goal requires the user to register and set up a profile to comment and review, so this is the entry point of the app. However, as some users may not wish to register or comment there is the option to skip this step. I
-                then prioritised the primary goal of viewing waymarker, map, and AR info via searching trails and filtering results.</p>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/user-flow-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/user-flow-2x.png" alt="User Flow Chart">
-                </picture>
-              </div>
-            </div>
-            <!-- close user flow section -->
-            <div>
-              <!-- open gestures and haptics section -->
-              <h4>Gestures</h4>
-              <p>All gestures are as defined by the Human Interface and Material Design guidelines. All maps are fully interactive with double tap or pinch and spread for zoom as well as drag and rotate.</p>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/gestures-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/gestures-2x.png" alt="Gestures Used">
-                </picture>
-              </div>
-              <h4>Sounds and Haptics</h4>
-              <p>Conventional notification and error sounds as per the Human Interface and Material Design Guidelines.</p>
-
-              <p>Waymarker reached: &#8594; Strong alert sound and vibration (due to outdoor noise)</p>
-              <p>Waymarker has user comments: &#8594; Message ping and vibrations</p>
-
-              <p>Users may turn one or both of these off in the settings, and also request that they only be notified of messages from within a recent timeframe.</p>
-            </div>
-            <!-- close gestures and haptics section -->
-            <div>
+          <!-- close protyping section -->
+            <div class="padtop">
               <picture>
-                <source srcset="img/ramblepal/mockup1-1x.png" media="(max-width:767px)">
-                <img src="img/ramblepal/mockup1-2x.png" alt="Mockups">
+                <source srcset="img/globowl/mockups2-1x.png" media="(max-width:767px)">
+                <img src="img/globowl/mockups2-2x.png" alt="Mockups">
               </picture>
             </div>
           </div>
           <!-- close ideation section -->
-          <div>
+          <div class="row">
             <!-- open Wireframes section -->
             <div>
               <h3>Wireframes</h3>
-              <p>Using the current human interface and material design guidelines I designed an iOS and Android version of the app. Elements like the buttons, navigation bar, and tab navigation will be familar to users of the applicable native
-                design. Colour palette’s and typography were established based on the guidelines. Iconography unique to the app was designed to be cohesive with existing iconography.</p>
+              <div>
+                <h5>Challenge</h5>
+                <p>What is the best layout for the recipe page?</p>
+                <h5>Solution</h5>
+                <p>The main recipe page is extremely important and so I put it under user preference testing to ensure I chose the best design; based on user feedback, the layout progressed to maximise space for content whilst making the most of high
+                  quality imagery.</p>
+              </div>
               <div>
                 <picture>
-                  <source srcset="img/ramblepal/wireframes-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/wireframes-2x.png" alt="Stages of Wireframes">
+                  <source srcset="img/globowl/recipe-page-ideation-1x.png" media="(max-width:767px)">
+                  <img src="img/globowl/recipe-page-ideation-2x.png" alt="Stages of Wireframes">
                 </picture>
               </div>
             </div>
+          </div>
+          <!-- close Wireframes section -->
+          <div class="row">
+            <!-- open design section -->
+            <h3> Design</h3>
             <div>
-              <h4>User Testing</h4>
+              <!-- open mood board section -->
+              <h4>Mood Boards</h4>
               <div>
-                <!-- open row that contains three columns -->
-                <div>
-                  <!-- open first column (Positive) -->
-                  <h5>Positive</h5>
-                  <ul>
-                    <li>Eye catching logo, use of colour and details</li>
-                    <li>Clean and inviting design</li>
-                    <li>Info is easy to see at a glance</li>
-                    <li>Good layout and logical hierarchy</li>
-                    <li>Easy to navigate</li>
-                  </ul>
-                </div>
-                <!-- close first column -->
-                <div>
-                  <!-- open second column (Critique) -->
-                  <h5>Critique</h5>
-                  <ul>
-                    <li>iOS nav bar icons are larger than other app icons</li>
-                    <li>Live Waymarker page looks a little unfinished, inconsistent with the rest of the app</li>
-                    <li>Clarity as to which pin pop-up is attached to on map view</li>
-                    <li>Info of time and distance on live mode would be useful</li>
-                    <li>Easy accessible start button but perhaps it being larger or a different colour would make it easier to spot</li>
-                  </ul>
-                </div>
-                <!-- close second column -->
-                <div>
-                  <!-- open third column (Solution) -->
-                  <h5>Solution</h5>
-                  <ul>
-                    <li>Adjust nav bar icons to the same size as the other icons</li>
-                    <li>Create a collapsable list instead of info cards</li>
-                    <li>Mute map with overlay and ensure the pop-up lies just beneath the relevant pin</li>
-                    <li>Use gradient overlay theme to add this info to live screens</li>
-                    <li>Use an extended floating action button (as per Material Design guidelines) and centre</li>
-                  </ul>
-                </div>
-                <!-- close third column -->
+                <h5>Challenge</h5>
+                <p>What theme is most suitable?</p>
+                <h5>Solution</h5>
+                <p>I wanted to use earth tones to reflect the environmental ethos. Greens evoke thoughts of fresh, healthy food as well as the planet and growth.</p>
+                <p>While I like both options, the tone of Mood Board A is more traditional for a recipe app. Users need to be engaged before they will interact with the unfamiliar global footprint design element, therefore it seemed most logical to
+                  stick with a more welcoming and recognisable aesthetic.</p>
               </div>
-              <!-- close row that contains three columns -->
+              <div class="padtop">
+                <picture>
+                  <source srcset="img/globowl/mood-boards-1x.png" media="(width:100%)">
+                  <img src="img/globowl/mood-boards-2x.png" alt="Contrasting Mood Boards">
+                </picture>
+              </div>
             </div>
-            <!-- close Wireframes section -->
-            <div>
-              <!-- open design section -->
-              <h3> Design</h3>
+            <!-- close mood board section -->
+            <div class="padtop">
+              <!-- open style guide section -->
               <h4>Style Guide</h4>
               <div>
+                <h5>Challenge</h5>
+                <p>How to keep the design consistent?</p>
+                <h5>Solution</h5>
+                <p>Maintaining integrity is paramount when building user trust and encouranging engagement with the Global Footprint feature; the style guide ensures that I, the design team, and any future iterations stay on brand.</p>
+              </div>
+              <div class="padtop">
                 <picture>
-                  <source srcset="img/ramblepal/style-guide-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/style-guide-2x.png" alt="Style Guide">
+                  <source srcset="img/globowl/style-guide-1x.png" media="(max-width:767px)">
+                  <img src="img/rglobowl/style-guide-2x.png" alt="Style Guide imgage">
+                </picture>
+              </div>
+              <div class="padtop">
+              <div class="floatleft" style="width: 40vw;">
+                <picture>
+                  <source srcset="img/globowl/globowl-footprint-1x.png" media="(max-width:60em)">
+                  <img src="img/globowl/globowl-footprint-2x.png" alt="Style Guide imgage">
                 </picture>
               </div>
               <div>
-                <picture>
-                  <source srcset="img/ramblepal/final-ui-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/final-ui-2x.png" alt="Mockups">
-                </picture>
-              </div>
-              <h4>iOS Screens</h4>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/final-ui-ios-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/final-ui-ios-2x.png" alt="UI iOS">
-                </picture>
-              </div>
-              <h4>Android Screens</h4>
-              <div>
-                <picture>
-                  <source srcset="img/ramblepal/final-android-1x.png" media="(max-width:767px)">
-                  <img src="img/ramblepal/final-android-2x.png" alt="UI Android">
-                </picture>
+                <p>Based on current recommendations, (or the user can set their own daily target) each recipe displays a global footprint animation (with
+                  a percentage) to show users, at a glance, how much of their daily footprint the recipe will use.</p>
               </div>
             </div>
-            <!-- close design section -->
+            </div>
+            <!-- close style guide section -->
           </div>
-          <!-- close process section -->
-          <div>
-            <!-- open conclusion -->
-            <h2>Conclusion</h2>
-            <div>
-              <h3>What Went Well</h3>
-              <p>Protyping and user testing. I find the process of protyping is a great way to discover where elements have been viewed from a different persepctive and may need some tweaking.</p>
-              <p>Research into existing apps was a fantastic springboard for applying key design elements and highlighting problem areas for which I might want to find a solution.</p>
-            </div>
-            <div>
-              <h3>Challenges</h3>
-              <p>Navigating the iOS and Material Design guidelines. I wanted to utilise the guidelines as much as possible but keep the app's design cohesive across the two platforms. I'll look into incorporating the guidelines into my regular skills
-                progression.</p>
-              <p>I wanted to use a largely monochrome colour scheme and it took me a few iterations before I found something I was happy with but I think the speed at which I came to a decision and applied it to my wireframes has improved.</p>
-            </div>
-            <div>
-              <h3>Improvement</h3>
-              <p>I would like to introduce a Country Code design element for those people less used using countryside trails; I'd like to integrate it into the trail info and live trail pages e.g. at a gate, a tappable icon would remind people to
-                leave the gate how they found it.</p>
-              <p>In terms of my own skills; I would love to improve my ability to create illustration as I think this will be an asset moving forwards, particularly with onboarding features.</p>
-            </div>
-          </div>
-          <!-- close conclusion -->
+          <!-- close design section -->
         </div>
+        <!-- close process section -->
+        <div>
+          <!-- open conclusion -->
+          <div class="padtop">
+            <picture>
+              <source srcset="img/globowl/responsive-screens-1x.png" media="(max-width:767px)">
+              <img src="img/globowl/responsive-screens-2x.png" alt="Style Guide imgage">
+            </picture>
+          </div>
+          <h2>Conclusion</h2>
+          <div>
+            <h3>Achievement</h3>
+            <p>I have created a responsive web app that allows users to see a recipe’s global footprint at a glance and make amendments to reduce that footprint.
+              The solution to aid user engagement by mirroring a circular loading icon for the global footprint indicator and using dropdown menus as part
+              of the ingredient swap feature worked well. Final iterations increased user understanding by placing the percentage (of the user’s daily food footprint with the current selection of ingredients) was moved from beneath the indicator to
+              sit inside it instead; this move better incorporated it into the design element and made it easier to understand at a glance.</p>
+          </div>
+          <div>
+            <h3>Blocks</h3>
+            <p>I have created a responsive web app that allows users to see a recipe’s global footprint at a glance and make amendments to reduce that footprint.
+              The solution to aid user engagement by mirroring a circular loading icon for the global footprint indicator and using dropdown menus as part
+              of the ingredient swap feature worked well. Final iterations increased user understanding by placing the percentage (of the user’s daily food footprint with the current selection of ingredients) was moved from beneath the indicator to
+              sit inside it instead; this move better incorporated it into the design element and made it easier to understand at a glance.</p>
+          </div>
+          <div>
+            <div>
+              <h3>Changes</h3>
+              <p>What changed was the my view of the user. The fact that every user said that they either didn’t eat meat or were trying to eat less meat but cooked for others who wanted to eat meat made me realise that there were very few apps that
+                gave non-vegetarians / non-vegans, options and incentives to choose foods better for the environment. This meant that I began creating an app aimed at home cooks of all diets
+                but that provided alternative options, making the design element that allowed users to swap out ingredients a key factor</p>
+            </div>
+            <h3>Next Time</h3>
+            Users were very interested in knowing where their ingredients come from. A future iteration may include links in the ingredients list to suggested brands that align with GloBowl values of ethically sourced, local ingredients.</p>
+          </div>
+        </div>
+        <!-- close conclusion -->
+      </div>
+      <!-- close process-->
+    </div>
   </main>
 
   <!-- For the Footer -->
   <footer id="contact">
-    <div>
+    <div class="footer">
       <h2>Get in Touch</h2>
       <p>
         If you're interested in collaborating on a project or have any questions please send me an email via the link below
@@ -305,10 +314,10 @@
       </p>
       <div>
         <!--Social Media Layout and placeholders -->
-        <ul>
+        <ul class="social">
           <!-- LinkedIn Icon -->
-          <li><a href="https://www.linkedin.com/in/laura-mellor-69940a1b6/" target="_blank">
-              <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+          <li><a href="https://www.linkedin.com/in/laura-mellor-69940a1b6/" target="_blank" class="icons">
+              <svg height="16%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="16%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                 xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="g5891">
                   <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
@@ -324,9 +333,9 @@
               </svg>
             </a></li>
           <!-- Behance Icon -->
-          <li><a href="https://www.behance.net/lauramellorui" target="_blank">
-              <svg height="6.82666in" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in"
-                xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <li><a href="https://www.behance.net/lauramellorui" target="_blank" class="icons">
+              <svg height="16%" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="16%" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <style type="text/css">
                     <![CDATA[
