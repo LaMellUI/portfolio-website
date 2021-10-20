@@ -8,8 +8,8 @@
   <title>About Laura Mellor</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -20,32 +20,32 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="page" id="about">
-  <!-- For the header -->
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo"><img src="img/logo2.jpg" alt="Laura Mellor UI"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <body class="page" id="home">
+    <!-- For the header -->
+    <header class="banner" id="header">
+      <div class="container">
+        <a href="index.html"><img class="logo" src="img/logo2.jpg" alt="Laura Mellor UI"></a>
+          <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <main>
     <div class="container">
-      <div>
+      <div class="center">
         <h1>My Story</h1>
       </div>
     </div>
@@ -53,16 +53,16 @@
       <!-- orange open -->
       <div>
         <!-- yellow open -->
-        <div style="width: 30vw;">
+        <div class="center">
           <picture>
-          <source srcset="img/headshot1x.png" media="(max-width:40em)">
-          <img src="img/headshot2x.png" alt="My Headshot">
-        </picture>
+            <source srcset="img/headshot1x.png" media="(max-width:40em)">
+            <img src="img/headshot2x.png" alt="My Headshot" class="headshot">
+          </picture>
         </div>
         <div>
           <!-- green open -->
           <!-- open row that contains (3) columns for About -->
-          <div>
+          <div class="center row no-border">
             <!-- aqua open -->
             <!-- open first column (my story) -->
             <p>
@@ -83,14 +83,16 @@
               I'm available for freelance and contract positions in the UK and remote work globally. I love to explore new places and cultures, and strive to keep learning and challenging myself. I have been learning French over the past year, and
               like to unwind with either an early morning run or an evening dram of whisky alongside a good film and some knitting.
             </p>
-            <a href="files/cv.pdf" download>Download My CV</a>
+            <div class="center">
+              <a href="files/cv.pdf" class="button" download>Download My CV</a>
+            </div>
           </div> <!-- aqua close -->
           <!-- end first column -->
-          <div>
+          <div class="row no-border">
             <!-- aqua open -->
             <!-- open second column (Skills and Tools) that contains two rows/columns -->
             <h2>Skills and Tools</h2>
-            <div>
+            <div class="col-md-8">
               <!-- open first S&T row/column -->
               <h3>Relevant Skills</h3>
               <ul>
@@ -105,7 +107,7 @@
               </ul>
             </div>
             <!-- close first S&T row/column -->
-            <div>
+            <div class="col-md-4">
               <!-- open second S&T row/column -->
               <h3>Tools I Use</h3>
               <ul>
@@ -131,13 +133,13 @@
 
   <!-- For the Footer -->
   <footer id="contact">
-    <div class="container">
+    <div class="footer container">
       <h2>Get in Touch</h2>
       <p>
         If you're interested in collaborating on a project or have any questions please send me an email via the link below
       </p>
       <div>
-        <a href="mailto:lauramellorui@gmail.com">Email me</a>
+        <a href="mailto:lauramellorui@gmail.com" class="button contact">Email Me</a>
       </div>
       <p>
         You may also call me at <a href="tel:+700000000">+70 0000000</a> or Skype me at <a href="skype:link">skype.link</a>
@@ -147,45 +149,44 @@
         <ul class="social">
           <!-- LinkedIn Icon -->
           <li><a href="https://www.linkedin.com/in/laura-mellor-69940a1b6/" target="_blank" class="icons">
-              <svg height="16%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512"
-                  width="16%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="g5891">
-                    <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
-                    <g id="shapes">
-                      <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                      <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
-                        style="fill:#fff;fill-rule:nonzero;" />
-                      <path
-                        d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                        id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                    </g>
+              <svg height="16%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="16%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="g5891">
+                  <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
+                  <g id="shapes">
+                    <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
+                    <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
+                      style="fill:#fff;fill-rule:nonzero;" />
+                    <path
+                      d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                      id="path15" style="fill:#fff;fill-rule:nonzero;" />
                   </g>
-                </svg>
+                </g>
+              </svg>
             </a></li>
           <!-- Behance Icon -->
           <li><a href="https://www.behance.net/lauramellorui" target="_blank" class="icons">
-              <svg height="16%"
-                  style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="16%" xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <style type="text/css">
-                      <![CDATA[
-                      .fil0 {
-                        fill: #039BE5
-                      }
+              <svg height="16%" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="16%" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <style type="text/css">
+                    <![CDATA[
+                    .fil0 {
+                      fill: #039BE5
+                    }
 
-                      .fil1 {
-                        fill: #F1F2F2
-                      }
-                      ]]>
-                    </style>
-                  </defs>
-                  <g id="Layer_x0020_1">
-                    <rect class="fil0" height="6.82667" rx="1.45635" ry="1.45635" width="6.82667" />
-                    <path class="fil1"
-                      d="M4.59622 2.84269c-0.951638,0 -0.952823,0.947909 -0.952823,0.952819 0,0 -0.0650394,0.948783 0.952823,0.948783 0,0 0.848661,0.0484606 0.848661,-0.660319l-0.435776 0c0,0 0.014315,0.266886 -0.398571,0.266886 0,0 -0.435776,0.0290039 -0.435776,-0.431217l1.28473 0c0,0 0.141382,-1.07695 -0.863268,-1.07695zm-0.426394 0.744961c0,0 0.0530787,-0.381614 0.435858,-0.381614 0.384197,0 0.37787,0.381614 0.37787,0.381614l-0.813728 0zm-1.08898 -0.244c0,0 0.377957,-0.0275276 0.377957,-0.471957 0,-0.443287 -0.309106,-0.660614 -0.701646,-0.660614l-1.29085 -1.9685e-005 0 2.48134 1.29085 0c0,0 0.788469,0.0243622 0.788469,-0.732917 0,0 0.0338346,-0.615835 -0.46478,-0.615835zm-1.04568 -0.691886l0.721992 0c0,0 0.175193,0 0.175193,0.258315 0,0.258358 -0.102681,0.295957 -0.219906,0.295957l-0.67728 0 0 -0.554272zm0.685874 1.59993l-0.685874 0 0 -0.664047 0.721992 0c0,0 0.262039,-0.0022874 0.260937,0.341748 0,0.289858 -0.194437,0.319945 -0.297055,0.322299zm1.34126 -1.89441l0 0.305339 1.02396 0 0 -0.305339 -1.02396 0z" />
-                  </g>
-                </svg>
+                    .fil1 {
+                      fill: #F1F2F2
+                    }
+                    ]]>
+                  </style>
+                </defs>
+                <g id="Layer_x0020_1">
+                  <rect class="fil0" height="6.82667" rx="1.45635" ry="1.45635" width="6.82667" />
+                  <path class="fil1"
+                    d="M4.59622 2.84269c-0.951638,0 -0.952823,0.947909 -0.952823,0.952819 0,0 -0.0650394,0.948783 0.952823,0.948783 0,0 0.848661,0.0484606 0.848661,-0.660319l-0.435776 0c0,0 0.014315,0.266886 -0.398571,0.266886 0,0 -0.435776,0.0290039 -0.435776,-0.431217l1.28473 0c0,0 0.141382,-1.07695 -0.863268,-1.07695zm-0.426394 0.744961c0,0 0.0530787,-0.381614 0.435858,-0.381614 0.384197,0 0.37787,0.381614 0.37787,0.381614l-0.813728 0zm-1.08898 -0.244c0,0 0.377957,-0.0275276 0.377957,-0.471957 0,-0.443287 -0.309106,-0.660614 -0.701646,-0.660614l-1.29085 -1.9685e-005 0 2.48134 1.29085 0c0,0 0.788469,0.0243622 0.788469,-0.732917 0,0 0.0338346,-0.615835 -0.46478,-0.615835zm-1.04568 -0.691886l0.721992 0c0,0 0.175193,0 0.175193,0.258315 0,0.258358 -0.102681,0.295957 -0.219906,0.295957l-0.67728 0 0 -0.554272zm0.685874 1.59993l-0.685874 0 0 -0.664047 0.721992 0c0,0 0.262039,-0.0022874 0.260937,0.341748 0,0.289858 -0.194437,0.319945 -0.297055,0.322299zm1.34126 -1.89441l0 0.305339 1.02396 0 0 -0.305339 -1.02396 0z" />
+                </g>
+              </svg>
             </a></li>
         </ul>
       </div>
