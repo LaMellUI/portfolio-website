@@ -12,7 +12,6 @@ Ramble Pal Secondary: rgb(3, 87, 42);
 
 GloBowl Text: (Dark Sage): rgb(113, 125, 107);
 */
-
 * {
   box-sizing: border-box;
 }
@@ -23,12 +22,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: rgb(6,14,2);
+  color: rgb(6, 14, 2);
 }
 
 #intro {
   padding: 20px 0;
-  display: inline-block;
+  text-align: center;
+  display: block;
   width: 100%;
 }
 
@@ -40,22 +40,25 @@ h1 {
   font-family: 'Merriweather', serif;
   font-size: 2.15em;
   font-weight: 700;
-  color: rgb(35,76,12);
+  color: rgb(35, 76, 12);
+  text-align: center;
 }
 
 h2 {
   font-family: 'Merriweather', serif;
   font-size: 2em;
   font-weight: 700;
-  color: rgb(35,76,12);
+  color: rgb(35, 76, 12);
+  text-align: center;
 }
 
 h3 {
   font-family: 'Merriweather', serif;
   font-size: 1.6em;
   font-weight: 400;
-  color: rgb(35,76,12);
+  color: rgb(35, 76, 12);
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -71,10 +74,16 @@ img {
   align: center;
 }
 
+.headshot {
+  width: 30vw;
+}
+
 a:visited {
   color: rgb(187, 199, 179);
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: rgb(55, 149, 1);
 }
 
@@ -82,11 +91,13 @@ a {
   color: rgb(113, 125, 107);
   text-decoration: underline;
 }
+
 a:hover {
   color: rgb(55, 149, 1);
   text-decoration: none;
   cursor: pointer;
 }
+
 a:hover,
 a:focus {
   color: rgb(55, 149, 1);
@@ -94,7 +105,7 @@ a:focus {
 }
 
 header {
-  background-color: rgb(35,76,12);
+  background-color: rgb(35, 76, 12);
   text-align: center;
   padding: 10px 0;
   box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.59);
@@ -110,29 +121,38 @@ main {
   padding-top: 25px;
 }
 
+.menu {
+  transform: translateX(-100rem);
+  animation: slidein .5s forwards;
+}
+
 .button:visited {
-  text-decoration: none; color: rbg(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .button:active {
   opacity: 0.8;
-  text-decoration: none; color: rbg(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
+
 .button {
   display: inline-block;
-  background-color: rgb(35,76,12);
+  background-color: rgb(35, 76, 12);
   color: rgb(255, 255, 255);
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgb(6, 14, 2);
-  transition: 0.2s opacity;
   text-decoration: none;
+  transition: 0.2s; opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  text-decoration: none; color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -142,37 +162,54 @@ main {
 
 .button.contact {
   background-color: transparent;
-  color: rgb(35,76,12);
+  color: rgb(35, 76, 12);
   text-transform: uppercase;
-  border: 2px solid rgb(35,76,12);
+  border: 2px solid rgb(35, 76, 12);
 }
 
 .button.contact:hover {
-  background-color: rgb(35,76,12);
-  text-transform: uppercase; color: rgb(255, 255, 255, 0.6);
-  border: 2px solid rgb(35,76,12);
+  background-color: rgb(35, 76, 12);
+  text-transform: uppercase;
+  color: rgb(255, 255, 255, 0.8);
+  border: 2px solid rgb(35, 76, 12);
   cursor: pointer;
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 #work .row {
   margin: 25px 0;
-  border-bottom: 1.5px solid; padding-bottom: 25px; border-color: rgb(110, 110, 110);
+  border-bottom: 1.5px solid;
+  padding-bottom: 25px;
+  border-color: rgb(110, 110, 110);
 }
 
 .row {
   margin: 25px 0;
-  border-bottom: 1.5px solid; padding-bottom: 25px; border-color: rgb(110, 110, 110);
+  border-bottom: 1.5px solid;
+  padding-bottom: 25px;
+  border-color: rgb(110, 110, 110);
+}
+
+#work .row.no-border, .row.no-border {
+  border-bottom: 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .footer {
   margin: 25px 0;
-  border-top: 1.5px solid; padding-top: 25px; border-color: rgb(110, 110, 110);
+  border-top: 1.5px solid;
+  padding-top: 25px;
+  border-color: rgb(110, 110, 110);
+  text-align: center;
 }
 
 .center {
@@ -180,7 +217,7 @@ main {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 14em;
 }
 
 nav {
@@ -188,34 +225,104 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: rgb(187, 199, 179);
 }
 
-nav > ul > li > a:active { /* selected link */
+nav>ul>li>a:active {
+  /* selected link */
   color: rgb(255, 255, 255, 0.7);
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.2s; opacity;
+  transform: translateX(100rem);
+  animation: slidein .5s forwards;
 }
 
-nav > ul > li > a:hover {
-  color: rgb(255, 255, 255, 0.7);
+nav>ul>li:nth-child(1) {
+  animation-delay: 0s;
+  }
+
+  nav>ul>li:nth-child() {
+    animation-delay: 0.5s;
+    }
+
+    nav>ul>li:nth-child(3) {
+      animation-delay: 1s;
+      }
+
+      nav>ul>li:nth-child(4) {
+        animation-delay: 1.5s;
+        }
+
+nav>ul>li>a:hover {
+  color: rgb(255, 255, 255, 0.4);
   text-decoration: none;
   cursor: pointer;
+}
+
+nav>ul>li>a::before
+nav>ul>li>a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+
+nav>ul>li>a::before {
+    top: 0px;
+    transform-origin: left;
+}
+
+nav>ul>li>a::after
+{
+    bottom: 0px;
+    transform-origin: right;
+}
+
+nav>ul>li>a:hover::before
+nav>ul>li>a:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+@keyframes slidein {
+  from {
+
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.logo>a {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.logo>a>img {
+  max-width: 12em;
 }
 
 ul.social svg {
@@ -248,3 +355,136 @@ ul.social li {
   bottom: 8px;
   right: 16px;
 }
+
+.story {
+  align-content: center;
+}
+
+.N {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  from {fill: rgb(220, 49, 37);}
+  to {fill: rgb(187, 199, 179);}
+}
+
+.clouds {
+  animation-duration: 20s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.clouds-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.soldier {
+  animation: 5s cloud-move infinite alternate linear;
+}
+
+.coat {
+  animation-duration: 5s;
+  animation-name: color-change2 cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change2 {
+  from {fill: rgb(220, 49, 37);}
+  to {fill: rgb(1, 1, 1);}
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  main {
+    padding-top: 99px;
+  }
+
+  header {
+    text-align: unset;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+  padding: 10px;
+}
+
+.col-md-8 {
+width: 65%;
+padding: 10px;
+}
+
+.col-md-4 {
+width: 35%;
+padding: 10px;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+#about h3 { margin-top: 0;}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.col-lg-7 {
+width: 70%;
+padding: 10px;
+}
+
+.col-lg-5 {
+width: 30%;
+padding: 10px;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
