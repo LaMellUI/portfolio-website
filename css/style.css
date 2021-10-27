@@ -106,15 +106,15 @@ a:focus {
 
 header {
   background-color: rgb(35, 76, 12);
-  text-align: center;
-  padding: 10px 0;
+  box-sizing: border-box;
+  padding: 10px 0 4px;
   box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.59);
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 162px;
+  padding-top: 66px;
 }
 
 .padtop {
@@ -217,21 +217,15 @@ main {
 }
 
 .logo {
-  max-width: 14em;
+  max-width: 100px;
+  padding-top: 6px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a:visited {
@@ -342,6 +336,40 @@ ul.social li {
   display: inline-block;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-align: right;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 /* Top right text */
 .top-right {
   position: absolute;
@@ -412,6 +440,10 @@ ul.social li {
   to {fill: rgb(1, 1, 1);}
 }
 
+.london {
+  max-width: 290px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -434,6 +466,19 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  .logo {
+    max-width: 9em;
+    padding-top: 14px;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
   .col-md-6 {
   width: 50%;
   padding: 10px;
@@ -455,6 +500,10 @@ padding: 10px;
 
 #about h3 { margin-top: 0;}
 
+}
+
+nav>ul {
+  margin: 1em 0;
 }
 
 /* ==============================
