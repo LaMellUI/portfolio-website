@@ -444,6 +444,8 @@ ul.social li {
   max-width: 290px;
 }
 
+html{scroll-behavior:smooth}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
