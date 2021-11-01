@@ -12,6 +12,7 @@ Ramble Pal Secondary: rgb(3, 87, 42);
 
 GloBowl Text: (Dark Sage): rgb(113, 125, 107);
 */
+
 * {
   box-sizing: border-box;
 }
@@ -97,8 +98,6 @@ a {
 }
 
 a:hover {
-  color: rgb(55, 149, 1);
-  text-decoration: none;
   cursor: pointer;
 }
 
