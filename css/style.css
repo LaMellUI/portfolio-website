@@ -12,7 +12,6 @@ Ramble Pal Secondary: rgb(3, 87, 42);
 
 GloBowl Text: (Dark Sage): rgb(113, 125, 107);
 */
-
 * {
   box-sizing: border-box;
 }
@@ -76,33 +75,32 @@ h5 {
 
 img {
   width: 100%;
-  align: center;
 }
 
 .headshot {
   width: 30vw;
 }
 
-a:visited {
+.contact p a:visited {
   color: rgb(187, 199, 179);
 }
 
-a:active {
+.contact p a:active {
   /* selected link */
   color: rgb(55, 149, 1);
 }
 
-a {
+.contact p a {
   color: rgb(113, 125, 107);
   text-decoration: underline;
 }
 
-a:hover {
+.contact p a:hover {
   cursor: pointer;
 }
 
-a:hover,
-a:focus {
+.contact p a:hover,
+.contact p a:focus {
   color: rgb(55, 149, 1);
   text-decoration: underline;
 }
@@ -149,7 +147,7 @@ main {
   border-radius: 3px;
   border-bottom: 2px solid rgb(6, 14, 2);
   text-decoration: none;
-  transition: 0.2s; opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -228,94 +226,20 @@ main {
   padding-top: 6px;
 }
 
-
-nav>ul {
+header ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a:visited {
+header ul a:visited {
   color: rgb(187, 199, 179);
 }
 
-nav>ul>li>a:active {
+header ul a:active {
   /* selected link */
   color: rgb(255, 255, 255, 0.7);
 }
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: 0.2s; opacity;
-  transform: translateX(100rem);
-  animation: slidein .5s forwards;
-}
-
-nav>ul>li:nth-child(1) {
-  animation-delay: 0s;
-  }
-
-  nav>ul>li:nth-child() {
-    animation-delay: 0.5s;
-    }
-
-    nav>ul>li:nth-child(3) {
-      animation-delay: 1s;
-      }
-
-      nav>ul>li:nth-child(4) {
-        animation-delay: 1.5s;
-        }
-
-nav>ul>li>a:hover {
-  color: rgb(255, 255, 255, 0.4);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-nav>ul>li>a::before
-nav>ul>li>a::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: rgb(255, 255, 255);
-  opacity: 0;
-  transform: scaleX(0);
-  transition: all .5s;
-}
-
-nav>ul>li>a::before {
-    top: 0px;
-    transform-origin: left;
-}
-
-nav>ul>li>a::after
-{
-    bottom: 0px;
-    transform-origin: right;
-}
-
-nav>ul>li>a:hover::before
-nav>ul>li>a:hover::after {
-    opacity: 1;
-    transform: scaleX(1);
-}
-
-@keyframes slidein {
-  from {
-
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 
 .logo>a {
   padding: 0 15px;
@@ -359,21 +283,22 @@ ul.social li {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: right;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -404,8 +329,13 @@ ul.social li {
 }
 
 @keyframes color-change {
-  from {fill: rgb(220, 49, 37);}
-  to {fill: rgb(187, 199, 179);}
+  from {
+    fill: rgb(220, 49, 37);
+  }
+
+  to {
+    fill: rgb(187, 199, 179);
+  }
 }
 
 .clouds {
@@ -417,8 +347,13 @@ ul.social li {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .clouds-back {
@@ -426,8 +361,13 @@ ul.social li {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .soldier {
@@ -443,15 +383,22 @@ ul.social li {
 }
 
 @keyframes color-change2 {
-  from {fill: rgb(220, 49, 37);}
-  to {fill: rgb(1, 1, 1);}
+  from {
+    fill: rgb(220, 49, 37);
+  }
+
+  to {
+    fill: rgb(1, 1, 1);
+  }
 }
 
 .london {
   max-width: 290px;
 }
 
-html{scroll-behavior:smooth}
+html {
+  scroll-behavior: smooth
+}
 
 .linkhead a {
   text-decoration: none;
@@ -496,66 +443,174 @@ Medium devices (640px and larger)
     padding-top: 14px;
   }
 
-  .navtoggle li:not(:last-child) {
-  display: inline-block;
+  nav ul li {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.2s opacity;
+    transform: translateX(100rem);
+    animation: slidein .5s forwards;
+  }
+
+  nav>ul>li:nth-child(1) {
+    animation-delay: 0s;
+    }
+
+    nav>ul>li:nth-child(2) {
+      animation-delay: 0.5s;
+      }
+
+      nav>ul>li:nth-child(3) {
+        animation-delay: 1s;
+        }
+
+        nav>ul>li:nth-child(4) {
+          animation-delay: 1.5s;
+          }
+
+  nav ul li:hover {
+    color: rgb(255, 255, 255, 0.4);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  nav ul li::before
+  nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+  }
+
+  nav ul li::before {
+      top: 0px;
+      transform-origin: left;
+  }
+
+  nav ul li::after
+  {
+      bottom: 0px;
+      transform-origin: right;
+  }
+
+  nav ul li:hover::before
+  nav ul li:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+  }
+
+  @keyframes slidein {
+    from { transform: translateX(100rem);
+
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  header ul a{
+    position: relative;
+    z-index: 0;
+    text-decoration: none;
+    padding: 10px 10px;
+  }
+
+  /* Border X get width  */
+header ul a:before, header ul a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
 }
 
-.navtoggle li:last-child {
-  display: none;
+header ul a:before
+{
+    left: 0px;
+    top: 0px;
 }
+
+header ul a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+header ul a:hover:before, header ul a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .col-md-6 {
-  width: 50%;
-  padding: 10px;
-}
+    width: 50%;
+    padding: 10px;
+  }
 
-.col-md-8 {
-width: 65%;
-padding: 10px;
-}
+  .col-md-8 {
+    width: 65%;
+    padding: 10px;
+  }
 
-.col-md-4 {
-width: 35%;
-padding: 10px;
-}
+  .col-md-4 {
+    width: 35%;
+    padding: 10px;
+  }
 
-[class*="col-"] {
-  float: left;
-}
+  [class*="col-"] {
+    float: left;
+  }
 
-#about h3 { margin-top: 0;}
-
-}
+  #about h3 {
+    margin-top: 0;
+  }
 
 nav>ul {
   margin: 1em 0;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 70%;
+    padding: 10px;
+  }
 
-.col-lg-7 {
-width: 70%;
-padding: 10px;
-}
+  .col-lg-5 {
+    width: 30%;
+    padding: 10px;
+  }
 
-.col-lg-5 {
-width: 30%;
-padding: 10px;
-}
+  [class*="col-"] {
+    float: left;
+  }
 
-[class*="col-"] {
-  float: left;
-}
-
-.container {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+  .container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ==============================
