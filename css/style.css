@@ -272,10 +272,6 @@ ul.social li {
   display: inline-block;
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
